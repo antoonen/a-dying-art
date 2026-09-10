@@ -7,7 +7,7 @@
   <title>A DYING ART | About</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@350&family=Big+Shoulders:wght@500&family=Martian+Mono:wdth,wght@85,250;85,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@350&family=Big+Shoulders:wght@500;600&family=Martian+Mono:wdth,wght@85,250;85,600&display=swap" rel="stylesheet">
   <style>
     html { overflow:scroll; scrollbar-gutter:stable; scrollbar-width:auto; scrollbar-color:#eaff00 rgba(234,255,0,.2); }
     html { overflow-y:scroll; overflow-x:hidden; }
@@ -31,7 +31,7 @@
   <header style="height:88px;padding:2rem 6vw;border-bottom:1px solid rgba(234,255,0,.35);display:flex;justify-content:space-between;gap:2rem;align-items:center;box-sizing:border-box;">
     <a href="index.html" style="color:#eaff00;text-decoration:none;font:500 1.8rem 'Big Shoulders',sans-serif;letter-spacing:.04em;">A DYING ART</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" style="font:600 14px 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.1em;text-transform:uppercase;"><a href="home.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Home</a><a href="gallery.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Gallery</a><a href="about.html" aria-current="page" style="color:#eaff00;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">About</a></nav>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" style="font:350 14px 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.1em;text-transform:uppercase;"><a href="home.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Home</a><a href="gallery.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Gallery</a><a href="about.html" aria-current="page" style="color:#eaff00;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">About</a></nav>
   </header>
   <main style="padding:3rem 6vw 7rem;max-width:1300px;">
     <p style="margin:0 0 3rem;color:#eaff00;font-size:13px;letter-spacing:.14em;text-transform:uppercase;">About the archive</p>
@@ -47,26 +47,75 @@
           <h3 style="margin:0 0 .5rem;color:#f1f5a2;font:700 15px/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.04em;text-transform:uppercase;"><em>The Wager</em>, by David Gran</h3>
           <p style="margin:0;font-size:15px;"><em>The Wager</em> chronicles an eighteenth-century British naval expedition gone horribly wrong. The book reveals the conditions aboard a British ship and how the Age of Enlightenment was shaped by exploration and imperial ambition.</p>
         </section>
+        <aside style="border-top:1px solid rgba(234,255,0,.4);margin-top:2.5rem;padding-top:2.5rem;">
+          <div style="background:#fff;display:block;padding:1.5rem 2rem;">
+            <p style="color:#220f43;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 .75rem;">Weather</p>
+            <div id="weather-widget"></div>
+          </div>
+        </aside>
       </div>
       <article style="grid-column:span 2;">
-        <h1 style="width:100%;min-width:0;max-width:1200px;margin:0 0 2rem;color:#eaff00;font:600 clamp(3.2rem,6.4vw,6.4rem)/1 'Big Shoulders',sans-serif;">WHAT A SHOCKED LEMUR CAN TEACH US ABOUT INNOVATION</h1>
+        <h1 style="margin:0 0 2rem;color:#eaff00;font:500 clamp(1.4rem,6vw,5.75rem)/1 'Big Shoulders',sans-serif;letter-spacing:.02em;">WHAT A SHOCKED LEMUR CAN TEACH US ABOUT INNOVATION</h1>
         <div style="color:#d9cfe0;line-height:1.5;max-width:800px;">
           <p>It started in 2016 with a visit to Florence’s Museum of Zoology and Natural History…</p>
           <p>Also known as La Specola (the Observatory), the Museum was founded in 1790 and is Europe’s oldest science museum. La Specola holds an eclectic collection tracing back to the Medici family, including numerous wax anatomical models used to teach 18th century physicians anatomy. Though these anatomical figures are what the Museum is primarily known for, they represent only a small portion of a collection totaling nearly four million artifacts. La Specola’s extensive collection of zoological specimens includes animals from around the world, including some that are now extinct.</p>
           <p>Though the practice of preserving animals had been around for millennia, it had previously been done primarily as a cultural or sacred ritual. That changed in the Age of Enlightenment, as travel and exploration brought exotic species to Europe, and naturalists sought to classify and understand the natural world through observation, collection, and scientific study. Taxidermy evolved to serve both educational and decorative purposes, fueling public fascination with the natural world.</p>
           <p>Acquiring specimens was no simple task before rail networks or air travel connected the globe. Naturalists and explorers often spent months or even years traveling in search of undiscovered species. Keeping animals alive during long sea voyages was notoriously difficult. As a result, many creatures died before reaching their destinations. Taxidermy emerged as a practical solution, allowing scientists and collectors to preserve rare animals for study and public education. But because taxidermists were evolving their skills and sometimes working on animals they had never seen in the wild, the quality of the lifelike representation might vary wildly—and with sometimes unfortunate results.</p>
-          <blockquote style="margin:2rem 0;padding:1rem 0;border-top:1px solid #f1f5a2;border-bottom:1px solid #f1f5a2;color:#f1f5a2;font:250 1.2rem/1.4 'Atkinson Hyperlegible Next',sans-serif;">La Specola’s bad taxidermy was not, in fact, a disappointment. Each specimen was a monument to trying. Those early taxidermists attempted to interpret an expanding world that they did not yet fully understand. Their clumsy taxidermy was the embodiment of what happens when humans who are unfamiliar with a new technology try to make sense of it, perhaps with limited skills.</blockquote>
-          <p>Today, mounted deer heads, fish, waterfowl, and other game animals are common features of hunting lodges, family cabins, rural bars, and outdoor retailers. Mounted trophies are tangible records—the one that didn’t get away. Yet modern taxidermy has also expanded far beyond its traditional roots. A growing community of underground taxidermists have embraced the medium as an art form, creating unexpected dioramas and whimsical displays. These unconventional works challenge viewers' expectations and transform a centuries-old practice into a vehicle for creative expression and cultural commentary.</p>
+          <blockquote style="margin:2rem 0;padding:1rem 0;border-top:1px solid #f1f5a2;border-bottom:1px solid #f1f5a2;color:#f1f5a2;font:250 1.2rem/1.4 ‘Atkinson Hyperlegible Next’,sans-serif;">La Specola’s bad taxidermy was not, in fact, a disappointment. Each specimen was a monument to trying. Those early taxidermists attempted to interpret an expanding world that they did not yet fully understand. Their clumsy taxidermy was the embodiment of what happens when humans who are unfamiliar with a new technology try to make sense of it, perhaps with limited skills.</blockquote>
+          <p>Today, mounted deer heads, fish, waterfowl, and other game animals are common features of hunting lodges, family cabins, rural bars, and outdoor retailers. Mounted trophies are tangible records—the one that didn’t get away. Yet modern taxidermy has also expanded far beyond its traditional roots. A growing community of underground taxidermists have embraced the medium as an art form, creating unexpected dioramas and whimsical displays. These unconventional works challenge viewers’ expectations and transform a centuries-old practice into a vehicle for creative expression and cultural commentary.</p>
           <p>This, too, is relevant in our digital age. From the ancient practice of preserving beasts for sacred burial to irreverent dioramas with raccoons in a canoe, the evolution of taxidermy reminds us to embrace the creative artistry and methodologies that make us human.</p>
         </div>
-        <aside style="border-top:1px solid rgba(234,255,0,.4);margin-top:5rem;padding-top:1rem;">
-          <p style="color:#eaff00;font-size:13px;letter-spacing:.14em;text-transform:uppercase;">Weather API</p>
-          <p style="font-size:2rem;margin:.5rem 0;">API data placeholder</p>
-          <p style="color:#d9cfe0;line-height:1.5;">Live weather data can be connected here through a server-side API integration. HTML alone cannot make an API request.</p>
-        </aside>
       </article>
     </div>
   </main>
 </body>
 <script>document.querySelector('.menu-toggle').addEventListener('click', function () { var menu = document.getElementById('primary-nav'); var isOpen = menu.classList.toggle('is-open'); this.setAttribute('aria-expanded', isOpen); });</script>
+<script>
+(function () {
+  var widget = document.getElementById('weather-widget');
+
+  function weatherInfo(code) {
+    if (code === 0)  return { emoji: '☀️',  label: 'Clear' };
+    if (code === 1)  return { emoji: '🌤️', label: 'Mostly Clear' };
+    if (code === 2)  return { emoji: '⛅',  label: 'Partly Cloudy' };
+    if (code === 3)  return { emoji: '☁️',  label: 'Overcast' };
+    if (code <= 48)  return { emoji: '🌫️', label: 'Foggy' };
+    if (code <= 55)  return { emoji: '🌦️', label: 'Drizzle' };
+    if (code <= 65)  return { emoji: '🌧️', label: 'Rain' };
+    if (code <= 77)  return { emoji: '❄️',  label: 'Snow' };
+    if (code <= 82)  return { emoji: '🌧️', label: 'Showers' };
+    if (code <= 86)  return { emoji: '🌨️', label: 'Snow Showers' };
+    return                  { emoji: '⛈️', label: 'Thunderstorm' };
+  }
+
+  function renderErr(msg) {
+    widget.innerHTML = '<p style="color:#6b5c7e;font-size:15px;margin:.25rem 0 0;">' + msg + '</p>';
+  }
+
+  if (!navigator.geolocation) { renderErr('Geolocation not supported by this browser.'); return; }
+
+  widget.innerHTML = '<p style="color:#6b5c7e;font-size:15px;margin:.25rem 0 0;letter-spacing:.06em;">Locating…</p>';
+
+  navigator.geolocation.getCurrentPosition(function (pos) {
+    var lat = pos.coords.latitude.toFixed(4);
+    var lon = pos.coords.longitude.toFixed(4);
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon + '&current=temperature_2m,weather_code&timezone=auto')
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        var tempC = Math.round(d.current.temperature_2m);
+        var tempF = Math.round(tempC * 9 / 5 + 32);
+        var info  = weatherInfo(d.current.weather_code);
+        widget.innerHTML =
+          '<p style="margin:0 0 .3rem;font-size:2rem;line-height:1;">' + info.emoji + '</p>' +
+          '<p style="margin:0;font:500 clamp(2rem,4.5vw,3rem)/1 \'Big Shoulders\',sans-serif;color:#220f43;letter-spacing:.02em;">' +
+            tempF + '&deg;F <span style="color:#6b5c7e;">/ ' + tempC + '&deg;C</span>' +
+          '</p>' +
+          '<p style="margin:.75rem 0 0;color:#220f43;">' + info.label + '</p>';
+      })
+      .catch(function () { renderErr('Could not fetch weather data.'); });
+  }, function () {
+    renderErr('Enable location to see your local weather.');
+  });
+})();
+</script>
 </html>
