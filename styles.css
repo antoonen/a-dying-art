@@ -1,0 +1,4 @@
+html { overflow:hidden; scrollbar-width:auto; scrollbar-color:#eaff00 rgba(234,255,0,.2); background:url('BackgroundImage.jpg') center/cover fixed; }
+html::-webkit-scrollbar { width:14px; height:14px; }
+html::-webkit-scrollbar-track { background:rgba(234,255,0,.2); }
+html::-webkit-scrollbar-thumb { background:#eaff00; border-radius:0; }
