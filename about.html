@@ -65,6 +65,10 @@
           <p>Today, mounted deer heads, fish, waterfowl, and other game animals are common features of hunting lodges, family cabins, rural bars, and outdoor retailers. Mounted trophies are tangible records—the one that didn’t get away. Yet modern taxidermy has also expanded far beyond its traditional roots. A growing community of underground taxidermists have embraced the medium as an art form, creating unexpected dioramas and whimsical displays. These unconventional works challenge viewers’ expectations and transform a centuries-old practice into a vehicle for creative expression and cultural commentary.</p>
           <p>This, too, is relevant in our digital age. From the ancient practice of preserving beasts for sacred burial to irreverent dioramas with raccoons in a canoe, the evolution of taxidermy reminds us to embrace the creative artistry and methodologies that make us human.</p>
         </div>
+        <div style="border-top:1px solid rgba(234,255,0,.4);margin-top:3rem;padding-top:2.5rem;">
+          <p style="color:#d9cfe0;font-size:18px;line-height:1.5;margin:0 0 1.5rem;">Want to chat about your favorite taxidermy projects?</p>
+          <a href="mailto:alison.neidttoonen@slalom.com" style="display:inline-block;background:#eaff00;color:#220f43;padding:1rem 1.4rem;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font:600 14px 'Martian Mono',monospace;white-space:nowrap;">Contact Me <span style="font-size:1.35em;line-height:0;">&#8594;</span></a>
+        </div>
       </article>
     </div>
   </main>
@@ -99,18 +103,26 @@
   navigator.geolocation.getCurrentPosition(function (pos) {
     var lat = pos.coords.latitude.toFixed(4);
     var lon = pos.coords.longitude.toFixed(4);
-    fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon + '&current=temperature_2m,weather_code&timezone=auto')
-      .then(function (r) { return r.json(); })
-      .then(function (d) {
+    Promise.all([
+      fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon + '&current=temperature_2m,weather_code&timezone=auto').then(function (r) { return r.json(); }),
+      fetch('https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=' + lat + '&longitude=' + lon + '&localityLanguage=en').then(function (r) { return r.json(); })
+    ])
+      .then(function (results) {
+        var d    = results[0];
+        var geo  = results[1];
         var tempC = Math.round(d.current.temperature_2m);
         var tempF = Math.round(tempC * 9 / 5 + 32);
         var info  = weatherInfo(d.current.weather_code);
+        var city  = geo.city || geo.locality || '';
+        var stateCode = geo.principalSubdivisionCode ? geo.principalSubdivisionCode.replace(/^[A-Z]+-/, '') : '';
+        var location  = city && stateCode ? city + ', ' + stateCode : city || stateCode;
+        var condition = location ? location + ': ' + info.label : info.label;
         widget.innerHTML =
           '<p style="margin:0 0 .3rem;font-size:2rem;line-height:1;">' + info.emoji + '</p>' +
           '<p style="margin:0;font:500 clamp(2rem,4.5vw,3rem)/1 \'Big Shoulders\',sans-serif;color:#220f43;letter-spacing:.02em;">' +
             tempF + '&deg;F <span style="color:#6b5c7e;">/ ' + tempC + '&deg;C</span>' +
           '</p>' +
-          '<p style="margin:.75rem 0 0;color:#220f43;">' + info.label + '</p>';
+          '<p style="margin:.75rem 0 0;color:#220f43;">' + condition + '</p>';
       })
       .catch(function () { renderErr('Could not fetch weather data.'); });
   }, function () {
