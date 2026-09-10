@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The gallery from A DYING ART.">
+  <title>A DYING ART | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@350;700&family=Big+Shoulders:wght@500&family=Martian+Mono:wdth,wght@85,250;85,600&display=swap" rel="stylesheet">
+  <style>
+    html { overflow:scroll; scrollbar-gutter:stable; scrollbar-width:auto; scrollbar-color:#eaff00 rgba(234,255,0,.2); }
+    html::-webkit-scrollbar { width:14px; height:14px; }
+    html::-webkit-scrollbar-track { background:rgba(234,255,0,.2); }
+    html::-webkit-scrollbar-thumb { background:#eaff00; border-radius:0; }
+    section[aria-label="Artifact gallery"] h2 { margin:1rem 0 .25rem;font:500 18px/1.5 'Big Shoulders',sans-serif !important;letter-spacing:.06em;text-transform:uppercase; }
+    section[aria-label="Artifact gallery"] p { margin:0 0 1rem; }
+    section[aria-label="Artifact gallery"] { grid-template-columns:repeat(4,minmax(0,1fr)) !important; }
+    section[aria-label="Artifact gallery"] img { aspect-ratio:1/1 !important; }
+    .menu-toggle { display:none; }
+    @media (max-width:1439px) { section[aria-label="Artifact gallery"] { grid-template-columns:repeat(3,minmax(0,1fr)) !important; } }
+    @media (max-width:1000px) { section[aria-label="Artifact gallery"] { grid-template-columns:repeat(2,minmax(0,1fr)) !important; } }
+    @media (max-width:700px) {
+      header { position:relative; }
+      .menu-toggle { display:block;padding:.5rem;border:0;background:transparent;color:#eaff00;font:350 14px 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer; }
+      nav.primary-nav { display:none;position:absolute;top:100%;right:6vw;z-index:2;padding:1rem;background:#220f43;border:1px solid rgba(234,255,0,.35); }
+      nav.primary-nav.is-open { display:flex;flex-direction:column;gap:.75rem; }
+      nav.primary-nav a { margin-left:0 !important; }
+      main { padding:3rem 6vw 7rem !important; }
+      section[aria-label="Artifact gallery"] { grid-template-columns:minmax(0,1fr) !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;background:#220f43;color:#f4f0e7;font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:350;font-size:18px;">
+  <header style="height:88px;padding:2rem 6vw;border-bottom:1px solid rgba(234,255,0,.35);display:flex;justify-content:space-between;gap:2rem;align-items:center;box-sizing:border-box;">
+    <a href="index.html" style="color:#eaff00;text-decoration:none;font:500 1.8rem 'Big Shoulders',sans-serif;letter-spacing:.04em;">A DYING ART</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" style="font:350 14px 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.1em;text-transform:uppercase;"><a href="home.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Home</a><a href="gallery.html" aria-current="page" style="color:#eaff00;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Gallery</a><a href="about.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">About</a></nav>
+  </header>
+  <main style="padding:3rem 6vw 7rem;">
+    <p style="margin:0 0 3rem;color:#eaff00;font-size:13px;letter-spacing:.14em;text-transform:uppercase;">The collection / alternate view</p>
+    <h1 style="width:min(100%,1440px);min-width:800px;margin:0 0 2rem;color:#eaff00;font:600 clamp(3.2rem,6.4vw,6.4rem)/1 'Big Shoulders',sans-serif;">GALLERY</h1>
+    <section aria-label="Artifact gallery" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:6rem 3rem;">
+      <article><img src="images/Image_1.jpg" alt="Secret Squirrel Identity" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Secret Squirrel Identity</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Mild-mannered woodland forager by day, legendary hero by night. This squirrel is ready to save the forest one acorn at a time.</p></article>
+      <article><img src="images/Image_2.jpg" alt="Antlers and Aristocracy" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Antlers and Aristocracy</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Dressed for a royal engagement that absolutely nobody organized, this deer carries herself with the confidence of a creature that expects you know how to curtsey.</p></article>
+      <article><img src="images/Image_3.jpg" alt="Fangs for the Memories" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Fangs for the Memories</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Ssssssssssusan’s orthodontia means she’s a work in progress, but aren’t we all on a journey to become our best ssssssssself?</p></article>
+      <article><img src="images/Image_4.jpg" alt="The Prickly Professor" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">The Prickly Professor</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Tenure has done little to soften the sharp edges. Research into proper hibernation techniques will resume once the professor finishes his nap.</p></article>
+      <article><img src="images/Image_5.jpg" alt="Close Enough" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Close Enough</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">The taxidermist's vision was clear, but then skill got in the way. Festus may no longer resemble other animals of his species, but he thinks it makes him a creature of distinction.</p></article>
+      <article><img src="images/Image_6.jpg" alt="Woodland Socialite" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Woodland Socialite</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Lucille arrives impeccably dressed for high tea, gossip, and mild scandal. She insists she doesn't start rumors, merely provides them with a supportive environment.</p></article>
+      <article><img src="images/Image_7.jpg" alt="Party Animal" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Party Animal</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Scientists remain divided on how much stoat is too much stoat. This tall drink of water and party reveler is determined to find out.</p></article>
+      <article><img src="images/Image_8.jpg" alt="Thoughts Pending" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Thoughts Pending</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Happily adrift and with more nuts stored for winter than brain cells, Seymour stands as a shining example that complex thoughts are entirely optional.</p></article>
+      <article><img src="images/Image_9.jpg" alt="Well, This Is Awkward" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Well, This Is Awkward</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">The nightmare is familiar: no notes, no pants, and somehow an entire room is staring. Whatever the plan was, it clearly involved a different bat.</p></article>
+      <article><img src="images/Image_10.jpg" alt="Party on, Wayne!" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Party on, Wayne!</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">He arrived empty-handed, uninvited, and became the life of the party. The night will almost certainly end with a burning lawn chair.</p></article>
+      <article><img src="images/Image_11.jpg" alt="Cat on a Hot Tin Roof" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Cat on a Hot Tin Roof</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Somewhere between apex predator and Hollywood icon, she’s been divorced 7 times but still channels timeless glamour with a distinctly feline flair.</p></article>
+      <article><img src="images/Image_12.jpg" alt="Foxy Lady" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Foxy Lady</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">The veil says fairy-tale romance. The expression says an uninvited guest has shown up wearing white.</p></article>
+      <article><img src="images/Image_13.jpg" alt="Building Code Enforcement" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Building Code Enforcement</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Straw, sticks, or bricks? Structures that fail to meet standards are one huff away from disaster.</p></article>
+      <article><img src="images/Image_14.jpg" alt="Riverboat Rascals" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Riverboat Rascals</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Having watched the movie Deliverance, Edgar and Herald set out on their canoe adventure. Surely, nothing would go wrong.</p></article>
+      <article><img src="images/Image_15.jpg" alt="Gone in One Sitting" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Gone in One Sitting</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">The evidence is undeniable, and the suspect remains at the scene. Whatever happened here, Cattila The Hun would like the record to show it was absolutely worth it.</p></article>
+      <article><img src="images/Image_16.jpg" alt="Whoo's Watching Who?" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Whoo's Watching Who?</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Few can claim Gerald's remarkable field of vision. Unfortunately, Gerald's eyes appear to have accepted assignments in two completely different directions.</p></article>
+      <article><img src="images/Image_17.jpg" alt="Stairway to Confusion" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Stairway to Confusion</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Chester insists the incident was a controlled descent. The bent leg and prolonged stay at the bottom of the stairs suggest otherwise.</p></article>
+      <article><img src="images/Image_18.jpg" alt="Post-Mortem Joy" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;"><h2 style="color:#f1f5a2;font:800 1.2rem/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.02em;">Post-Mortem Joy</h2><p style="color:#d9cfe0;font-size:18px;line-height:1.5;">Before this remarkable turnaround, Eugene considered "mild disappointment" an aspirational mood.</p></article>
+    </section>
+  </main>
+</body>
+<script>document.querySelector('.menu-toggle').addEventListener('click', function () { var menu = document.getElementById('primary-nav'); var isOpen = menu.classList.toggle('is-open'); this.setAttribute('aria-expanded', isOpen); });</script>
+</html>

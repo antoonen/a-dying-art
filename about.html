@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About the A DYING ART archive.">
+  <title>A DYING ART | About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@350&family=Big+Shoulders:wght@500&family=Martian+Mono:wdth,wght@85,250;85,600&display=swap" rel="stylesheet">
+  <style>
+    html { overflow:scroll; scrollbar-gutter:stable; scrollbar-width:auto; scrollbar-color:#eaff00 rgba(234,255,0,.2); }
+    html { overflow-y:scroll; overflow-x:hidden; }
+    html::-webkit-scrollbar { width:14px; height:14px; }
+    html::-webkit-scrollbar-track { background:rgba(234,255,0,.2); }
+    html::-webkit-scrollbar-thumb { background:#eaff00; border-radius:0; }
+    .menu-toggle { display:none; }
+    @media (max-width:700px) {
+      header { position:relative; }
+      .menu-toggle { display:block;padding:.5rem;border:0;background:transparent;color:#eaff00;font:600 14px 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer; }
+      nav.primary-nav { display:none;position:absolute;top:100%;right:6vw;z-index:2;padding:1rem;background:#220f43;border:1px solid rgba(234,255,0,.35); }
+      nav.primary-nav.is-open { display:flex;flex-direction:column;gap:.75rem; }
+      nav.primary-nav a { margin-left:0 !important; }
+      main { padding:3rem 6vw 7rem !important; }
+      main > div { grid-template-columns:minmax(0,1fr) !important; }
+      main > div > article { grid-column:auto !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;background:#220f43;color:#f4f0e7;font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:350;font-size:18px;">
+  <header style="height:88px;padding:2rem 6vw;border-bottom:1px solid rgba(234,255,0,.35);display:flex;justify-content:space-between;gap:2rem;align-items:center;box-sizing:border-box;">
+    <a href="index.html" style="color:#eaff00;text-decoration:none;font:500 1.8rem 'Big Shoulders',sans-serif;letter-spacing:.04em;">A DYING ART</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" style="font:600 14px 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.1em;text-transform:uppercase;"><a href="home.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Home</a><a href="gallery.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Gallery</a><a href="about.html" aria-current="page" style="color:#eaff00;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">About</a></nav>
+  </header>
+  <main style="padding:3rem 6vw 7rem;max-width:1300px;">
+    <p style="margin:0 0 3rem;color:#eaff00;font-size:13px;letter-spacing:.14em;text-transform:uppercase;">About the archive</p>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8vw;align-items:start;">
+      <div>
+        <img src="images/Loris.jpg" alt="Loris specimen" style="display:block;width:100%;height:auto;">
+        <section aria-labelledby="further-reading" style="margin-top:3rem;color:#d9cfe0;line-height:1.5;max-width:800px;">
+          <h2 id="further-reading" style="margin:0 0 1.5rem;color:#eaff00;font:350 13px/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.14em;text-transform:uppercase;">Further Reading</h2>
+          <h3 style="margin:0 0 .5rem;color:#f1f5a2;font:700 15px/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.04em;text-transform:uppercase;"><em>Crap Taxidermy</em>, by Cat Su</h3>
+          <p style="margin:0 0 1.5rem;font-size:15px;">This humor-filled collection showcases the most hilariously flawed and bizarre examples of taxidermy, celebrating the creativity, oddity, and occasional horror of amateur animal preservation while offering a tongue-in-cheek look at the art of specimen mounting.</p>
+          <h3 style="margin:0 0 .5rem;color:#f1f5a2;font:700 15px/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.04em;text-transform:uppercase;"><em>The Feather Thief</em>, by Kirk Wallace Johnson</h3>
+          <p style="margin:0 0 1.5rem;font-size:15px;"><em>The Feather Thief</em> recounts the true story of a young man who stole hundreds of rare bird specimens from a museum to supply the niche world of Victorian fly-tying, highlighting not only an unusual crime but also the immense value of taxidermy collections as irreplaceable records of biodiversity and the importance of preserving specimens for future generations.</p>
+          <h3 style="margin:0 0 .5rem;color:#f1f5a2;font:700 15px/1.5 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.04em;text-transform:uppercase;"><em>The Wager</em>, by David Gran</h3>
+          <p style="margin:0;font-size:15px;"><em>The Wager</em> chronicles an eighteenth-century British naval expedition gone horribly wrong. The book reveals the conditions aboard a British ship and how the Age of Enlightenment was shaped by exploration and imperial ambition.</p>
+        </section>
+      </div>
+      <article style="grid-column:span 2;">
+        <h1 style="width:100%;min-width:0;max-width:1200px;margin:0 0 2rem;color:#eaff00;font:600 clamp(3.2rem,6.4vw,6.4rem)/1 'Big Shoulders',sans-serif;">WHAT A SHOCKED LEMUR CAN TEACH US ABOUT INNOVATION</h1>
+        <div style="color:#d9cfe0;line-height:1.5;max-width:800px;">
+          <p>It started in 2016 with a visit to Florence’s Museum of Zoology and Natural History…</p>
+          <p>Also known as La Specola (the Observatory), the Museum was founded in 1790 and is Europe’s oldest science museum. La Specola holds an eclectic collection tracing back to the Medici family, including numerous wax anatomical models used to teach 18th century physicians anatomy. Though these anatomical figures are what the Museum is primarily known for, they represent only a small portion of a collection totaling nearly four million artifacts. La Specola’s extensive collection of zoological specimens includes animals from around the world, including some that are now extinct.</p>
+          <p>Though the practice of preserving animals had been around for millennia, it had previously been done primarily as a cultural or sacred ritual. That changed in the Age of Enlightenment, as travel and exploration brought exotic species to Europe, and naturalists sought to classify and understand the natural world through observation, collection, and scientific study. Taxidermy evolved to serve both educational and decorative purposes, fueling public fascination with the natural world.</p>
+          <p>Acquiring specimens was no simple task before rail networks or air travel connected the globe. Naturalists and explorers often spent months or even years traveling in search of undiscovered species. Keeping animals alive during long sea voyages was notoriously difficult. As a result, many creatures died before reaching their destinations. Taxidermy emerged as a practical solution, allowing scientists and collectors to preserve rare animals for study and public education. But because taxidermists were evolving their skills and sometimes working on animals they had never seen in the wild, the quality of the lifelike representation might vary wildly—and with sometimes unfortunate results.</p>
+          <blockquote style="margin:2rem 0;padding:1rem 0;border-top:1px solid #f1f5a2;border-bottom:1px solid #f1f5a2;color:#f1f5a2;font:250 1.2rem/1.4 'Atkinson Hyperlegible Next',sans-serif;">La Specola’s bad taxidermy was not, in fact, a disappointment. Each specimen was a monument to trying. Those early taxidermists attempted to interpret an expanding world that they did not yet fully understand. Their clumsy taxidermy was the embodiment of what happens when humans who are unfamiliar with a new technology try to make sense of it, perhaps with limited skills.</blockquote>
+          <p>Today, mounted deer heads, fish, waterfowl, and other game animals are common features of hunting lodges, family cabins, rural bars, and outdoor retailers. Mounted trophies are tangible records—the one that didn’t get away. Yet modern taxidermy has also expanded far beyond its traditional roots. A growing community of underground taxidermists have embraced the medium as an art form, creating unexpected dioramas and whimsical displays. These unconventional works challenge viewers' expectations and transform a centuries-old practice into a vehicle for creative expression and cultural commentary.</p>
+          <p>This, too, is relevant in our digital age. From the ancient practice of preserving beasts for sacred burial to irreverent dioramas with raccoons in a canoe, the evolution of taxidermy reminds us to embrace the creative artistry and methodologies that make us human.</p>
+        </div>
+        <aside style="border-top:1px solid rgba(234,255,0,.4);margin-top:5rem;padding-top:1rem;">
+          <p style="color:#eaff00;font-size:13px;letter-spacing:.14em;text-transform:uppercase;">Weather API</p>
+          <p style="font-size:2rem;margin:.5rem 0;">API data placeholder</p>
+          <p style="color:#d9cfe0;line-height:1.5;">Live weather data can be connected here through a server-side API integration. HTML alone cannot make an API request.</p>
+        </aside>
+      </article>
+    </div>
+  </main>
+</body>
+<script>document.querySelector('.menu-toggle').addEventListener('click', function () { var menu = document.getElementById('primary-nav'); var isOpen = menu.classList.toggle('is-open'); this.setAttribute('aria-expanded', isOpen); });</script>
+</html>

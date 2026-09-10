@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The horizontal artifact story from A DYING ART.">
+  <title>A DYING ART | Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@350&family=Big+Shoulders:wght@500&family=Martian+Mono:wdth,wght@85,250;85,600&display=swap" rel="stylesheet">
+  <style>
+    html { overflow:hidden; scrollbar-width:auto; scrollbar-color:#eaff00 rgba(234,255,0,.2); }
+    html::-webkit-scrollbar { width:14px; height:14px; }
+    html::-webkit-scrollbar-track { background:rgba(234,255,0,.2); }
+    html::-webkit-scrollbar-thumb { background:#eaff00; border-radius:0; }
+    .story-scroll {
+      scrollbar-color:#eaff00 rgba(234,255,0,.2);
+      scrollbar-width:auto;
+      scrollbar-gutter:stable;
+    }
+    .story-scroll::-webkit-scrollbar {
+      height:14px;
+    }
+    .story-scroll::-webkit-scrollbar-track {
+      background:rgba(234,255,0,.2);
+    }
+    .story-scroll::-webkit-scrollbar-thumb {
+      background:#eaff00;
+      border-radius:0;
+    }
+    .story-scrollbar {
+      position:absolute;
+      right:6vw;
+      bottom:1rem;
+      left:6vw;
+      z-index:1;
+      width:calc(100% - 12vw);
+      height:14px;
+      accent-color:#eaff00;
+      background:transparent;
+      cursor:pointer;
+      -webkit-appearance:none;
+      appearance:none;
+      padding:0;
+      margin:0;
+      outline:none;
+      border:none;
+    }
+    .story-scrollbar::-webkit-slider-runnable-track {
+      height:14px;
+      background:rgba(234,255,0,.2);
+      border-radius:7px;
+    }
+    .story-scrollbar::-webkit-slider-thumb {
+      -webkit-appearance:none;
+      width:30px;
+      height:8px;
+      background:#eaff00;
+      border-radius:4px;
+      cursor:pointer;
+      margin-top:3px;
+    }
+    .story-scrollbar::-moz-range-track {
+      height:14px;
+      background:rgba(234,255,0,.2);
+      border:none;
+      border-radius:7px;
+    }
+    .story-scrollbar::-moz-range-thumb {
+      width:30px;
+      height:8px;
+      background:#eaff00;
+      border-radius:4px;
+      border:none;
+      cursor:pointer;
+    }
+    .menu-toggle { display:none; }
+    @media (max-width:700px) {
+      header { position:relative; }
+      .menu-toggle { display:block;padding:.5rem;border:0;background:transparent;color:#eaff00;font:600 14px 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer; }
+      nav.primary-nav { display:none;position:absolute;top:100%;right:6vw;z-index:2;padding:1rem;background:#220f43;border:1px solid rgba(234,255,0,.35); }
+      nav.primary-nav.is-open { display:flex;flex-direction:column;gap:.75rem; }
+      nav.primary-nav a { margin-left:0 !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;height:100vh;overflow:hidden;background:#220f43;color:#f4f0e7;font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:350;font-size:18px;">
+  <header style="height:88px;padding:2rem 6vw;border-bottom:1px solid rgba(234,255,0,.35);display:flex;justify-content:space-between;gap:2rem;align-items:center;box-sizing:border-box;">
+    <a href="index.html" style="color:#eaff00;text-decoration:none;font:500 1.8rem 'Big Shoulders',sans-serif;letter-spacing:.04em;">A DYING ART</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" style="font:600 14px 'Atkinson Hyperlegible Next',sans-serif;letter-spacing:.1em;text-transform:uppercase;">
+      <a href="home.html" aria-current="page" style="color:#eaff00;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Home</a>
+      <a href="gallery.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">Gallery</a>
+      <a href="about.html" style="color:#d9cfe0;text-decoration:none;letter-spacing:.14em;margin-left:1.5rem;">About</a>
+    </nav>
+  </header>
+  <main style="position:relative;height:calc(100vh - 88px);overflow:hidden;">
+    <p style="margin:3rem 6vw .5rem;color:#eaff00;font-size:13px;letter-spacing:.14em;text-transform:uppercase;">Scroll right &#8594;</p>
+    <div class="story-scroll" dir="ltr" style="height:calc(100% - 56px);display:flex;direction:ltr;overflow-x:scroll;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:6vw;gap:80px;padding:0 6vw 1rem;box-sizing:border-box;">
+      <article style="min-width:72vw;max-width:900px;height:100%;scroll-snap-align:start;margin-left:220px;padding:1rem 0;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;">
+        <h1 style="width:min(100%,1200px);min-width:500px;color:#eaff00;font:600 clamp(5.76rem,11.52vw,11.52rem)/1 'Big Shoulders',sans-serif;letter-spacing:.02em;margin:0 0 1rem;">CRAFT MEETS CHAOS</h1>
+        <p style="width:100%;min-width:500px;max-width:700px;color:#d9cfe0;line-height:1.5;margin:0;">Are they accidental masterpieces or spectacular miscalculations? ¿Por qué no los dos? Peruse this showcase of delightful absurdity by scrolling to the right.</p>
+        <button type="button" aria-label="Scroll to the first image" onclick="document.getElementById('first-image').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });" style="align-self:flex-start;margin-top:1.5rem;background:#eaff00;color:#220f43;padding:1rem 1.4rem;border:0;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font:600 14px 'Martian Mono',monospace;white-space:nowrap;cursor:pointer;">Scroll Right <span style="font-size:1.35em;line-height:0;">&#8594;</span></button>
+      </article>
+      <article id="first-image" style="width:600px;min-width:600px;max-width:600px;height:100%;scroll-snap-align:start;padding:2rem 0 1rem;box-sizing:border-box;display:grid;grid-template-rows:auto auto auto;align-content:center;">
+        <img src="images/Image_6.jpg" alt="Woodland Socialite" style="display:block;justify-self:start;width:100%;max-width:560px;max-height:min(560px,calc(100vh - 340px));height:auto;object-fit:contain;">
+        <h2 style="color:#f1f5a2;font:500 18px/1.5 'Big Shoulders',sans-serif;letter-spacing:.06em;text-transform:uppercase;max-width:560px;width:100%;justify-self:start;text-align:left;margin:2rem 0 .25rem;">Woodland Socialite</h2>
+        <p style="color:#d9cfe0;font-size:18px;line-height:1.5;max-width:560px;width:100%;justify-self:start;text-align:left;margin:0 0 1rem;">Lucille arrives impeccably dressed for high tea, gossip, and mild scandal. She insists she doesn't start rumors, merely provides them with a supportive environment.</p>
+      </article>
+      <article style="width:600px;min-width:600px;max-width:600px;height:100%;scroll-snap-align:start;padding:2rem 0 1rem;box-sizing:border-box;display:grid;grid-template-rows:auto auto auto;align-content:center;">
+        <img src="images/Image_7.jpg" alt="Party Animal" style="display:block;justify-self:start;width:100%;max-width:560px;max-height:min(560px,calc(100vh - 340px));height:auto;object-fit:contain;">
+        <h2 style="color:#f1f5a2;font:500 18px/1.5 'Big Shoulders',sans-serif;letter-spacing:.06em;text-transform:uppercase;max-width:560px;width:100%;justify-self:start;text-align:left;margin:2rem 0 .25rem;">Party Animal</h2>
+        <p style="color:#d9cfe0;font-size:18px;line-height:1.5;max-width:560px;width:100%;justify-self:start;text-align:left;margin:0 0 1rem;">Scientists remain divided on how much stoat is too much stoat. This tall drink of water and party reveler is determined to find out.</p>
+      </article>
+      <article style="width:600px;min-width:600px;max-width:600px;height:100%;scroll-snap-align:start;padding:2rem 0 1rem;box-sizing:border-box;display:grid;grid-template-rows:auto auto auto;align-content:center;">
+        <img src="images/Image_12.jpg" alt="Foxy Lady" style="display:block;justify-self:start;width:100%;max-width:560px;max-height:min(560px,calc(100vh - 340px));height:auto;object-fit:contain;">
+        <h2 style="color:#f1f5a2;font:500 18px/1.5 'Big Shoulders',sans-serif;letter-spacing:.06em;text-transform:uppercase;max-width:560px;width:100%;justify-self:start;text-align:left;margin:2rem 0 .25rem;">Foxy Lady</h2>
+        <p style="color:#d9cfe0;font-size:18px;line-height:1.5;max-width:560px;width:100%;justify-self:start;text-align:left;margin:0 0 1rem;">The veil says fairy-tale romance. The expression says an uninvited guest has shown up wearing white.</p>
+      </article>
+      <article style="width:600px;min-width:600px;max-width:600px;height:100%;scroll-snap-align:start;padding:2rem 0 1rem;box-sizing:border-box;display:grid;grid-template-rows:auto auto auto;align-content:center;">
+        <img src="images/Image_15.jpg" alt="Gone in One Sitting" style="display:block;justify-self:start;width:100%;max-width:560px;max-height:min(560px,calc(100vh - 340px));height:auto;object-fit:contain;">
+        <h2 style="color:#f1f5a2;font:500 18px/1.5 'Big Shoulders',sans-serif;letter-spacing:.06em;text-transform:uppercase;max-width:560px;width:100%;justify-self:start;text-align:left;margin:2rem 0 .25rem;">Gone in One Sitting</h2>
+        <p style="color:#d9cfe0;font-size:18px;line-height:1.5;max-width:560px;width:100%;justify-self:start;text-align:left;margin:0 0 1rem;">The evidence is undeniable, and the suspect remains at the scene. Whatever happened here, Cattila The Hun would like the record to show it was absolutely worth it.</p>
+      </article>
+      <article style="min-width:72vw;max-width:900px;height:100%;scroll-snap-align:start;padding:1rem 0;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;">
+        <h2 style="color:#eaff00;font:500 48px/1.2 'Big Shoulders',sans-serif;letter-spacing:.02em;margin:0 0 1rem;">YOU CAME. YOU SAW.<br>NOW YOU HAVE FLEAS.</h2>
+        <p style="color:#d9cfe0;font-size:18px;line-height:1.5;max-width:800px;margin:0;">You've wandered through a brief menagerie of curious creatures. The googly eyes have wobbled, the teeth have snaggled. These animals give us a glimpse of the quirks, creativity, and questionable sanity of the humans who shaped them.</p>
+        <a href="gallery.html" style="align-self:flex-start;margin-top:1.5rem;background:#eaff00;color:#220f43;padding:1rem 1.4rem;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font:600 14px 'Martian Mono',monospace;white-space:nowrap;">Explore the Gallery <span style="font-size:1.35em;line-height:0;">&#8594;</span></a>
+      </article>
+    </div>
+    <input class="story-scrollbar" type="range" min="0" max="0" value="0" step="1" aria-label="Scroll story horizontally">
+  </main>
+</body>
+<script>
+  var menuToggle = document.querySelector('.menu-toggle');
+  var menu = document.getElementById('primary-nav');
+  var story = document.querySelector('.story-scroll');
+  var storyScrollbar = document.querySelector('.story-scrollbar');
+  menuToggle.addEventListener('click', function () { var isOpen = menu.classList.toggle('is-open'); this.setAttribute('aria-expanded', isOpen); });
+  function syncStoryScrollbar() {
+    storyScrollbar.max = Math.max(0, story.scrollWidth - story.clientWidth);
+    storyScrollbar.value = story.scrollLeft;
+  }
+  story.addEventListener('scroll', syncStoryScrollbar, { passive: true });
+  storyScrollbar.addEventListener('input', function () { story.scrollLeft = this.value; });
+  window.addEventListener('resize', syncStoryScrollbar);
+  syncStoryScrollbar();
+</script>
+</html>
